@@ -45,6 +45,10 @@ kotlin {
     jvmToolchain(21)
 }
 
+tasks.shadowJar {
+    archiveFileName = "${project.name}-$version.jar"
+}
+
 bukkit {
     main = "me.baggi.furinasdk.Plugin"
     version = project.version.toString()
