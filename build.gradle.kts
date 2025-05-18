@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.baggi"
-version = "1.0"
+version = "1.1"
 
 repositories {
     mavenCentral()
@@ -36,6 +36,9 @@ dependencies {
     // Other
     implementation("org.reflections:reflections:0.10.2")
     implementation("com.squareup.okhttp:okhttp:2.7.5")
+    implementation("org.java-websocket:Java-WebSocket:1.6.0")
+    implementation("com.google.guava:guava:33.4.8-jre")
+    implementation("com.google.code.gson:gson:2.13.1")
 }
 
 tasks.test {
