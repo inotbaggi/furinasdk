@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.baggi"
-version = "1.1"
+version = "1.1.1"
 
 repositories {
     mavenCentral()
@@ -32,6 +32,7 @@ dependencies {
     implementation("fr.mrmicky:fastboard:2.1.3")
     implementation("fr.skytasul:glowingentities:1.4.3")
     implementation("dev.triumphteam:triumph-gui:3.1.11")
+    implementation(files("libs/SimpleJSONConfig-1.4.jar"))
 
     // Other
     implementation("org.reflections:reflections:0.10.2")
