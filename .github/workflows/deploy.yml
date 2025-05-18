@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # чтобы теги подтянулись
 
       - name: Set up JDK
         uses: actions/setup-java@v4
@@ -37,7 +35,7 @@ jobs:
           fi
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew shadowJar
 
       - name: Create Git Tag
         run: |
